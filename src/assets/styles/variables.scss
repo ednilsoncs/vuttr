@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+$family-primary: Source Sans Pro;
+
+$primary: #15aa4b;
+$yellow: #f9bf09;
+$red: #e74c3c;
+$green: #14aa4b;
+$blue: #3c75d8;
+
+$black: #1d242b;
+$dark: #2d3844;
+
+$grey-darker: #3b4652;
+$grey-dark: #96a0af;
+$grey: #dce0e9;
+$grey-light: #e6ebef;
+$grey-lighter: #f4f7f9;
+$grey-lightest: #e9e9e9;
+
+$control-border-width: 1px;
+$input-shadow: none;
+$link: $primary;
+
+$body-background-color: $grey-lighter;
+
+$tooltip-background-color: $grey-darker;
+$navbar-item-hover-background-color: unset;
+
+$control-padding-vertical: 22px;
+$control-padding-horizontal: 20px;
+
+// input
+$input-color: $grey-dark;
+$input-background-color: #f8f9fd;
+.input::placeholder { color: $input-color; } // :P
+
+// title
+$title-color: $grey-darker;
+$subtitle-color: $grey-dark;
+
+
+@import '~bulma/sass/utilities/all.sass';
