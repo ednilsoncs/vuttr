@@ -4,11 +4,11 @@ import Icon from '../../assets/images/icon-search.svg';
 
 type Props = InputHTMLAttributes<HTMLInputElement>;
 
-const SearchInput: React.FC<Props> = () => {
+const SearchInput: React.FC<Props> = ({ ...props }) => {
   return (
     <div className="search-input">
       <img src={Icon} alt="Icon search" />
-      <input className="search" placeholder="search" />
+      <input className="search" placeholder="search" {...props} />
     </div>
   );
 };
