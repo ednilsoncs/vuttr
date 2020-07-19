@@ -1,0 +1,25 @@
+.button {
+  background-color: #0dcb7d;
+  color: white;
+  font: 600 18px Source Sans Pro;
+  letter-spacing: 0.36px;
+  padding: 5px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #10b26c;
+}
+
+button:disabled {
+  background-color: #88edc4;
+}
+
+button:focus {
+  background-color: #0e995d;
+}
+
+button:disabled {
+  background-color: #88edc4;
+}
+

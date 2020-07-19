@@ -1,3 +1,82 @@
-.home h1 {
-  color: black;
+@import '../../assets/styles/variables';
+
+.home {
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 0 auto;
+
+  h1 {
+    color: #170c3a;
+  }
+
+  h2 {
+    color: #dedce1;
+  }
+
+
+  .bar .search-bar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bar .search-bar .checkbox {
+    margin: 0 10px;
+  }
+
+  .bar .search-bar span {
+    color: #170c3a;
+  }
+
+  .bar .add {
+    align-items: right;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .card {
+    background-color: #f5f4f6;
+    border: 1px solid #ebeaed;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 10px 10px #0000000d;
+    margin-bottom: 10px;
+  }
+
+  .card .header {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card .header h5 {
+    color: #365df0;
+    text-decoration: underline;
+  }
+
+  .card .header .close {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card .header .close img {
+    height: 16px;
+    margin-right: 10px;
+    width: 16px;
+  }
+
+  .card .tags {
+    margin-top: 10px;
+  }
+
+  .card .tags span {
+    color: #000;
+    font-weight: 600;
+    margin-right: 10px;
+  }
 }
