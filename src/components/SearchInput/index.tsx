@@ -6,7 +6,7 @@ type Props = InputHTMLAttributes<HTMLInputElement>;
 
 const SearchInput: React.FC<Props> = ({ ...props }) => {
   return (
-    <div className="search-input">
+    <div className="search-input-container">
       <img src={Icon} alt="Icon search" />
       <input className="search" placeholder="search" {...props} />
     </div>
