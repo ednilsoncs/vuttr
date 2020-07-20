@@ -4,10 +4,13 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  margin-bottom: 18px;
   width: 100%;
+
 
   p {
     margin-bottom: 5px;
+
   }
 
   input {
@@ -19,5 +22,30 @@
     letter-spacing: 0.4px;
     padding: 10px;
     width: 100%;
+
+  }
+
+  .input-error {
+    background: #feefee;
+    border: 1px solid #f95e5a;
+  }
+
+  .input-error::placeholder {
+    color: #f95e5a;
+  }
+
+  .error-message {
+    text-align: right;
+    width: 100%;
+  }
+
+  .error-message p {
+    color: #f95e5a;
+    font-size: 18px;
+    letter-spacing: 0.36px;
+    margin-top: 8.5px;
+
   }
 }
+
+
