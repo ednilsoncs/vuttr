@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
-
-$family-primary: Source Sans Pro;
+$family-primary: 'Source Sans Pro';
 
 $primary: #4c4499;
 $yellow: #f9bf09;
@@ -30,14 +28,8 @@ $navbar-item-hover-background-color: unset;
 $control-padding-vertical: 22px;
 $control-padding-horizontal: 20px;
 
-// input
-$input-color: $grey-dark;
-$input-background-color: #f8f9fd;
-.input::placeholder { color: $input-color; } // :P
-
 // title
 $title-color: $grey-darker;
 $subtitle-color: $grey-dark;
 
 
-@import '~bulma/sass/utilities/all.sass';
