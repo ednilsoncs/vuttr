@@ -20,11 +20,18 @@ interface tools {
   tags: string[];
 }
 
+interface ToolFormData {
+  title: string;
+  link: string;
+  description: string;
+  tags: string;
+}
+
 const Home: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
-  const [tools, setTools] = useState<tools[]>();
+  const [tools, setTools] = useState<tools[]>([]);
   const [isTag, setIsTag] = useState<boolean>(false);
-  const [isAdd, setIsAdd] = useState<boolean>(true);
+  const [isAdd, setIsAdd] = useState<boolean>(false);
 
   const handleSearch = async (input: string): Promise<void> => {
     let params = {};
@@ -43,28 +50,39 @@ const Home: React.FC = () => {
     isTag,
   ]);
 
-  const handleSubmit = useCallback(async data => {
-    try {
-      formRef.current?.setErrors({});
-      const schema = Yup.object().shape({
-        title: Yup.string().required('The title is mandatory'),
-        link: Yup.string().required('The link is mandatory'),
-        tags: Yup.string().required('The tags is mandatory'),
-        description: Yup.string().required('The description is mandatory'),
-      });
-      await schema.validate(data, {
-        abortEarly: false,
-      });
-    } catch (err) {
-      if (err instanceof Yup.ValidationError) {
-        const errors = getValidationErrors(err);
-        formRef.current?.setErrors(errors);
-        return;
+  const handleSubmit = useCallback(
+    async (data: ToolFormData) => {
+      try {
+        formRef.current?.setErrors({});
+        const schema = Yup.object().shape({
+          title: Yup.string().required('The title is mandatory'),
+          link: Yup.string().required('The link is mandatory'),
+          tags: Yup.string().required('The tags is mandatory'),
+          description: Yup.string().required('The description is mandatory'),
+        });
+        await schema.validate(data, {
+          abortEarly: false,
+        });
+        const tagsWithoutHastTag = data.tags.replace(/#/g, '');
+        const tags = tagsWithoutHastTag.split(' ');
+        const submitData = {
+          link: data.link,
+          title: data.title,
+          description: data.description,
+          tags,
+        };
+        const response = await api.post('tools', submitData);
+        setTools([...tools, response.data]);
+        setIsAdd(false);
+      } catch (err) {
+        if (err instanceof Yup.ValidationError) {
+          const errors = getValidationErrors(err);
+          formRef.current?.setErrors(errors);
+        }
       }
-    }
-    return;
-    api.post('tools', {});
-  }, []);
+    },
+    [tools],
+  );
 
   useEffect(() => {
     api.get('tools').then(response => setTools(response.data));
@@ -142,12 +160,7 @@ const Home: React.FC = () => {
 
               <Input label="Tags" name="tags" placeholder="tags" />
               <div className="button-footer">
-                <Button
-                  type="submit"
-                  onClick={() => formRef.current?.submitForm()}
-                >
-                  Add tool
-                </Button>
+                <Button type="submit">Add tool</Button>
               </div>
             </Form>
           </section>
