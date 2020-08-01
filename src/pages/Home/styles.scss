@@ -110,4 +110,21 @@
     justify-content: flex-end;
     width: 100%;
   }
+
+  .remove-card .modal-card .modal-card-body .button-footer {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .remove-card .modal-card .modal-card-head img {
+    height: 16px;
+    margin-right: 10px;
+    width: 16px;
+  }
+
+  .remove-card .modal-card .modal-card-head button {
+    background-color: transparent;
+    border: transparent;
+  }
 }

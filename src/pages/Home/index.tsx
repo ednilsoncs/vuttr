@@ -32,6 +32,7 @@ const Home: React.FC = () => {
   const [tools, setTools] = useState<tools[]>([]);
   const [isTag, setIsTag] = useState<boolean>(false);
   const [isAdd, setIsAdd] = useState<boolean>(false);
+  const [toRemove, setToRemove] = useState<string>();
 
   const handleSearch = async (input: string): Promise<void> => {
     let params = {};
@@ -123,7 +124,9 @@ const Home: React.FC = () => {
               <div className="header column">
                 <a href={tool.link}>{tool.title}</a>
                 <div className="close">
-                  <img src={CloseIcon} alt="close icon" />
+                  <button type="button" onClick={() => setToRemove(tool.id)}>
+                    <img src={CloseIcon} alt="close icon" />
+                  </button>
                 </div>
               </div>
               <div className="column">
@@ -165,6 +168,24 @@ const Home: React.FC = () => {
             </Form>
           </section>
           <footer className=".modal-card-foot" />
+        </div>
+      </div>
+      <div className={`remove-card modal ${!!toRemove && 'is-active'}`}>
+        <div className="modal-background" />
+        <div className="modal-card">
+          <header className="modal-card-head">
+            <p className="modal-card-title">Add new tool</p>
+            <button type="button" onClick={() => setToRemove('')}>
+              <img src={CloseIcon} alt="close icon" />
+            </button>
+          </header>
+          <section className="modal-card-body">
+            Are you sure you want to remove hotel?
+            <div className="button-footer">
+              <Button type="button">Cancel</Button>
+              <Button type="button">Yes, Remover</Button>
+            </div>
+          </section>
         </div>
       </div>
     </div>
