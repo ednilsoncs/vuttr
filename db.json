@@ -1,0 +1,145 @@
+{
+  "tools": [
+    {
+      "id": 1,
+      "title": "Notion",
+      "link": "https://notion.so",
+      "description": "All in one tool to organize teams and ideas. Write, plan, collaborate, and get organized. ",
+      "tags": [
+        "organization",
+        "planning",
+        "collaboration",
+        "writing",
+        "calendar"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "link": "https://github.com/typicode/json-server",
+      "description": "Fake REST API based on a json schema. Useful for mocking and creating APIs for front-end devs to consume in coding challenges.",
+      "tags": [
+        "api",
+        "json",
+        "schema",
+        "node",
+        "github",
+        "rest"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "fastify",
+      "link": "https://www.fastify.io/",
+      "description": "Extremely fast and simple, low-overhead web framework for NodeJS. Supports HTTP2.",
+      "tags": [
+        "web",
+        "framework",
+        "node",
+        "http2",
+        "https",
+        "localhost"
+      ]
+    },
+    {
+      "title": "test-tool",
+      "description": "test-tool description wow",
+      "tags": [
+        "test",
+        "tool",
+        "wow",
+        "such"
+      ],
+      "id": 5
+    },
+    {
+      "link": "https://github.com/",
+      "title": "Github",
+      "description": "Github is a site",
+      "tags": [
+        "git",
+        "test",
+        "github"
+      ],
+      "id": 6
+    },
+    {
+      "link": "https://github.com/",
+      "title": "Github",
+      "description": "Github is a site",
+      "tags": [
+        "git",
+        "test",
+        "github"
+      ],
+      "id": 7
+    },
+    {
+      "link": "https://gitlab.com/",
+      "title": "gitlab",
+      "description": "is a site",
+      "tags": [
+        "git",
+        "test2"
+      ],
+      "id": 8
+    },
+    {
+      "link": "https://gitlab.com/",
+      "title": "gitlab",
+      "description": "is a site",
+      "tags": [
+        "git",
+        "test2"
+      ],
+      "id": 9
+    },
+    {
+      "link": "ww.linkedin.com",
+      "title": "vttr",
+      "description": "is a social network",
+      "tags": [
+        "social",
+        "network"
+      ],
+      "id": 10
+    },
+    {
+      "link": "google.com",
+      "title": "google",
+      "description": "is the google",
+      "tags": [
+        "google",
+        "search"
+      ],
+      "id": 11
+    },
+    {
+      "link": "test",
+      "title": "teste",
+      "description": "teste",
+      "tags": [
+        "teste"
+      ],
+      "id": 12
+    },
+    {
+      "link": "teste2",
+      "title": "teste2",
+      "description": "teste2",
+      "tags": [
+        "teste2"
+      ],
+      "id": 13
+    },
+    {
+      "link": "teste3",
+      "title": "teste3",
+      "description": "teste3",
+      "tags": [
+        "teste3"
+      ],
+      "id": 14
+    }
+  ]
+}

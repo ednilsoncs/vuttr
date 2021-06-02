@@ -1,0 +1,45 @@
+@import '../../assets/styles/variables';
+
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  width: 100%;
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  textarea {
+    background-color: #f5f4f6;
+    border: 1px solid #ebeaed;
+    border-radius: 5px;
+    font-family: $family-primary;
+    font-size: 20px;
+    height: 100%;
+    letter-spacing: 0.4px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .textarea-error {
+    background: #feefee;
+    border: 1px solid #f95e5a;
+  }
+
+  .textarea-error::placeholder {
+    color: #f95e5a;
+  }
+
+  .error-message {
+    text-align: right;
+    width: 100%;
+  }
+
+  .error-message p {
+    color: #f95e5a;
+    font-size: 18px;
+    letter-spacing: 0.36px;
+    margin-top: 8.5px;
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../assets/styles/variables';
+
+.search-input-container {
+  align-items: center;
+  background-color: #f5f4f6;
+  border: 1px solid #ebeaed;
+  border-radius: 5px;
+  display: flex;
+  padding: 4px;
+
+  input {
+    background-color: transparent;
+    border: transparent;
+    flex: 1;
+    font-family: $family-primary;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+
+  img {
+    height: 20px;
+    margin-right: 10px;
+    width: 20px;
+  }
+}

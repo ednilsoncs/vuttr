@@ -1,0 +1,51 @@
+@import './variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+body {
+  background: $primary;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button {
+  font: 20px Source Sans Pro, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  font: 20px Source Sans Pro, sans-serif;
+}
+
+h1 {
+  font-family: Source Sans Pro;
+  font-size: 42px;
+}
+
+h2 {
+  font-family: Source Sans Pro;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: Source Sans Pro;
+  font-size: 30px;
+}
+
+h4 {
+  font-family: Source Sans Pro;
+  font-size: 26px;
+}
+
+h5 {
+  font-family: Source Sans Pro;
+  font-size: 24px;
+}

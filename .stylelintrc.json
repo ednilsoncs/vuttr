@@ -1,0 +1,11 @@
+
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "max-nesting-depth": 4,
+    "selector-max-compound-selectors": null,
+    "color-named": "always-where-possible",
+    "scss/at-extend-no-missing-placeholder": null,
+    "selector-no-qualifying-type": null
+  }
+}

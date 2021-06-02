@@ -1,0 +1,130 @@
+@import '../../assets/styles/variables';
+
+.home {
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 0 auto;
+
+  .body h1 {
+    color: #170c3a;
+  }
+
+  .body h2 {
+    color: #dedce1;
+  }
+
+
+  .body .bar .search-bar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .body .bar .search-bar .checkbox {
+    margin: 0 10px;
+  }
+
+  .body .bar .search-bar span {
+    color: #170c3a;
+  }
+
+  .body .bar .add {
+    align-items: right;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .body .card {
+    background-color: #f5f4f6;
+    border: 1px solid #ebeaed;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 10px 10px #0000000d;
+    margin-bottom: 10px;
+  }
+
+  .body .card .header {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .body .card .header a {
+    color: #365df0;
+    font-size: 24px;
+    text-decoration: underline;
+  }
+
+  .body .card .header .close {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .body .card .header .close img {
+    height: 16px;
+    margin-right: 10px;
+    width: 16px;
+  }
+
+  .body .card .tags {
+    margin-top: 10px;
+  }
+
+  .body .card .tags span {
+    color: #000;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+
+  .add-card .modal-card .modal-card-head {
+    background-color: white;
+    border: 0;
+  }
+
+  .add-card .modal-card .modal-card-head img {
+    height: 16px;
+    margin-right: 10px;
+    width: 16px;
+  }
+
+  .add-card .modal-card .modal-card-head button {
+    background-color: transparent;
+    border: transparent;
+  }
+
+  .add-card .modal-card .modal-card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-card .modal-card .modal-card-body form .button-footer {
+    align-items: right;
+    background-color: white;
+    border: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .remove-card .modal-card .modal-card-body .button-footer {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .remove-card .modal-card .modal-card-head img {
+    height: 16px;
+    margin-right: 10px;
+    width: 16px;
+  }
+
+  .remove-card .modal-card .modal-card-head button {
+    background-color: transparent;
+    border: transparent;
+  }
+}

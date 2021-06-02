@@ -1,0 +1,23 @@
+.button-container {
+  background-color: #0dcb7d;
+  border: transparent;
+  color: white;
+  font: 600 18px Source Sans Pro;
+  letter-spacing: 0.36px;
+  margin-left: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+
+.button-container:hover {
+  background-color: #10b26c;
+}
+
+.button-container:disabled {
+  background-color: #88edc4;
+}
+
+.button-container:focus {
+  background-color: #0e995d;
+}
